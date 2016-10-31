@@ -1,4 +1,5 @@
 #!/bin/sh
 
+# INSERT before this line any non-blocking code
 /usr/bin/ssh-keygen -A # Will generate host keys if they don't already exist
 exec /usr/sbin/sshd -De 2>&1
